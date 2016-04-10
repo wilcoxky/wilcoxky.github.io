@@ -1,28 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Kyle Wilcox</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="icon" href="images/favicon.png">
-</head>
-<body>
-	<div class="container">
-		<section class="lego-board">
-			<img id="lego-name" src="images/lego-name.png">
-			<img id="about" src="images/about-me.png">
-			<div class="icons">
-				<a id="penn" href="http://www.seas.upenn.edu/"><img src="images/lego-penn.png"></a>
-				<a id="football" href="javascript:void(0)"><img src="images/football-lego.png"></a>
-				<a id="github" href="https://github.com/wilcoxky"><img src="images/lego-github.png"></a>
-			</div>
-			<div class="icons">
-				<a id="email" href="mailto:wilcox32ahs@gmail.com"><img src="images/lego-email.png"></a>
-				<a id="dribbble" href="https://dribbble.com/wilcoxky"><img src="images/lego-dribbble.png"></a>
-				<a id="resume" href="WilcoxKyle_ENG_RESUME_S15.pdf"><img src="images/lego-resume.png"></a>
-			</div>
-		</section>
-		<!-- <p class="sub-container">Testing</p> -->
-	</div>
-	<script type="text/javascript"></script>
-</body>
+  <head>
+    <title>Kyle Wilcox</title>
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+  </head>
+  <body>
+    <div class="foreground">
+      <!-- Navigation Bar -->
+      <header class="navigation" role="banner">
+        <div class="navigation-wrapper">
+          <a href="#" class="logo">
+            <h1 id="name-logo">Kyle Wilcox</h1>
+          </a>
+          <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">Menu</a>
+          <nav role="navigation">
+            <ul id="js-navigation-menu" class="navigation-menu show">
+              <li class="nav-link"><a href="#about-me">About Me</a></li>
+              <li class="nav-link"><a href="#projects">Projects</a></li>
+              <li class="nav-link"><a href="WilcoxKyle_ENG_RESUME_S15.pdf">Resume</a></li>
+              <li class="nav-link"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- Carousel Of Art -->
+      <!--       <div id="carousel-art">
+        <div><img src="images/explore.jpg"></div>
+        <div><img src="images/football.jpg"></div>
+        <div><img src="images/exhibit1.png"></div>
+      </div> -->
+      <div id="js-parallax-window" class="parallax-window">
+        <div class="parallax-static-content">
+          <h1>Explore</h1>
+        </div>
+        <div id="js-parallax-background" class="parallax-background"></div>
+      </div>
+      <!-- About Me Section  -->
+      <div class="content-wrapper">
+        <div id="side-drawing"><img src="images/pdDrawing.jpg"></div>
+        <div id="about-me">
+          <h1 id="about">About Me:</h1>
+          <p>Hi my name is Kyle Wilcox, I am currently a fifth year senior at the University of Pennslyvania studying computer science and Chinese. During my first four years of undergrad I was a member of the Varsity football. In the upcoming year I will be joing Venture for America, a fellowshp where you get the oppurtunity to join a start up for 2 years. I am a very driven individual who is always trying to improve himself. If you'd like to chat feel free to contact me!</p>
+        </div>
+      </div>
+      <!-- project section -->
+      <div class="content-wrapper" id="projects">
+        <div class="grid-items-lines">
+          <a href="javascript:void(0)" class="grid-item">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
+            <h1>Grid Item</h1>
+            <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+          </a>
+          <a href="javascript:void(0)" class="grid-item">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
+            <h1>Another Item</h1>
+            <p>Lorem ipsum consectetur dolor sit amet, consectetur adipisicing elit.</p>
+          </a>
+          <a href="javascript:void(0)" class="grid-item">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
+            <h1>Another Grid Item</h1>
+            <p>Lorem ipsum dolor sit amet, elit.</p>
+          </a>
+          <a href="javascript:void(0)" class="grid-item">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
+            <h1>Grid Item</h1>
+            <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+          </a>
+          <a href="javascript:void(0)" class="grid-item grid-item-big">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
+            <h1>Wider Grid Item</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, illum.</p>
+          </a>
+          <a href="javascript:void(0)" class="grid-item">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
+            <h1>A Grid Item</h1>
+            <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+          </a>
+          <a href="javascript:void(0)" class="grid-item">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
+            <h1>Item</h1>
+            <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+          </a>
+          <a href="javascript:void(0)" class="grid-item">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
+            <h1>Last Grid Item</h1>
+            <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+          </a>
+          <div class="right-cover"></div>
+          <div class="bottom-cover"></div>
+        </div>
+
+      </div>
+      
+      <!-- contact section -->
+      <div class="content-wrapper" id="contact">
+        <div id="contact-info">
+          <a href="mailto:wilcox32ahs@gmail.com"><img src="images/lego-email.png"></a>
+          <a href="http://github.com/wilcoxky"><img src="images/lego-github.png"></a>
+          <a href="http://linkedin.com/in/kylewilcox41"><img src="images/linkedin.png"></a>
+        </div>
+      </div>
+    </div>
+    <script src="js/bundle.js"></script>
+  </body>
 </html>
