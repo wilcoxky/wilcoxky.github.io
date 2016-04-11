@@ -17,7 +17,7 @@
             <ul id="js-navigation-menu" class="navigation-menu show">
               <li class="nav-link"><a href="#about-me">About Me</a></li>
               <li class="nav-link"><a href="#projects">Projects</a></li>
-              <li class="nav-link"><a href="WilcoxKyle_ENG_RESUME_S15.pdf">Resume</a></li>
+              <li class="nav-link"><a href="resume_s16.pdf">Resume</a></li>
               <li class="nav-link"><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -40,78 +40,169 @@
         <div id="side-drawing"><img src="images/pdDrawing.jpg"></div>
         <div id="about-me">
           <h1 id="about">About Me:</h1>
-          <p>Hi my name is Kyle Wilcox, I am currently a fifth year senior at the University of Pennslyvania studying computer science and Chinese. During my first four years of undergrad I was a member of the Varsity football. In the upcoming year I will be joing Venture for America, a fellowshp where you get the oppurtunity to join a start up for 2 years. I am a very driven individual who is always trying to improve himself. If you'd like to chat feel free to contact me!</p>
+          <p>Hi my name is Kyle Wilcox, I am currently a fifth year senior at the University of Pennslyvania studying computer science and Chinese. During my first four years of undergrad I was a member of the Varsity football team. In the upcoming year I will be joining Venture for America, a fellowship where you get the oppurtunity to work at start up for 2 years. I am a very driven individual who is always trying to improve himself. If you'd like to chat feel free to contact me!</p>
         </div>
       </div>
       <!-- project section -->
+      <!-- modal for projects -->
       <div class="content-wrapper" id="projects">
-<!--         <div class="side-image">
-          <div class="images-wrapper"></div>
-          <div class="side-image-content">
-            <h4>Topic Name</h4>
-            <h1>Message with a gradient image</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.</p>
-          </div>
-        </div>
-        <div class="side-image">
-          <div class="images-wrapper"></div>
-          <div class="side-image-content">
-            <h4>Topic Name</h4>
-            <h1>Message with a gradient image</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.</p>
-          </div>
-        </div>
-        <div class="side-image">
-          <div class="images-wrapper"></div>
-          <div class="side-image-content">
-            <h4>Topic Name</h4>
-            <h1>Message with a gradient image</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.</p>
-          </div>
-        </div> -->
-<!--         <div class="side-image">
-          <div class="images-wrapper"></div>
-          <div class="side-image-content">
-            <h4>Topic Name</h4>
-            <h1>Message with a gradient image</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.</p>
-          </div>
-        </div> -->
         <div class="grid-items-lines">
-          <a href="javascript:void(0)" class="grid-item">
-            <img src="images/pinyin.png" alt="">
-            <h1>Piyinator</h1>
-            <p>Chrome Extension that annotates the pinyin onto Chinese Articles</p>
-          </a>
+          <div class="modal">
+            <label for="modal-1">
+              <!-- <div class="modal-trigger">Click for Modal</div> -->
+              <div href="javascript:void(0)" class="grid-item modal-trigger">
+                <img src="images/pinyin.png" alt="">
+                <h1>Piyinator</h1>
+                <p>Chrome Extension that annotates the pinyin onto Chinese Articles</p>
+              </div>
+            </label>
+            <input class="modal-state" id="modal-1" type="checkbox" />
+            <div class="modal-fade-screen">
+              <div class="modal-inner">
+                <div class="modal-close" for="modal-1"></div>
+                <h1>Piyinator</h1>
+                <div class="hero">
+                  <div class="hero-inner">
+                    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
+                    " alt="Logo Image"></a>
+                    <div class="hero-copy">
+                      <h1>Short description of Product</h1>
+                      <p>A few reasons why this product is worth using, who it's for and why they need it.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-intro"></div>
+                <div class="modal-content">
+                  <h1>Idea:</h1>
+                  <p>As a Chinese major and learner I have always found it much easier to read Chinese when using piyin as opposed to characters. </p>
+                  <h1>Challenges:</h1>
+                  <h1>What I learned</h1>
+                  <h1>Tools:</h1>
+                <h1>Links:</h1>Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</div>
+              </div>
+            </div>
+          </div>
           <a href="http://wilcoxky.deviantart.com/gallery/?catpath=scraps" class="grid-item">
             <img src="images/art.png" alt="">
             <h1>My Sketchbook</h1>
             <p>Collection of the sketches and illustrations I've done.</p>
           </a>
-          <a href="javascript:void(0)" class="grid-item">
-            <img src="images/squat.png" alt="">
-            <h1>Lifting Analysis</h1>
-            <p>Analyze your squat form</p>
-          </a>
-          <a href="javascript:void(0)" class="grid-item">
-            <img src="images/athways.png" alt="">
-            <h1>Athways</h1>
-            <p>Team workout management software</p>
-          </a>
-          <a href="javascript:void(0)" class="grid-item">
-            <img src="images/blog.png" alt="">
-            <h1>Simple Blog</h1>
-            <p>Simple Blog implementation</p>
-          </a>
-          <a href="javascript:void(0)" class="grid-item">
-            <img src="images/custom-google.png" alt="">
-            <h1>Custom Google</h1>
-            <p>Team created web-based search engine</p>
-          </a>
+          <div class="modal">
+            <label for="modal-2">
+              <!-- <div class="modal-trigger">Click for Modal</div> -->
+              <div href="javascript:void(0)" class="grid-item modal-trigger">
+                <img src="images/squat.png" alt="">
+                <h1>Lifting Analysis</h1>
+                <p>Analyze your squat form</p>
+              </div>
+            </label>
+            <input class="modal-state" id="modal-2" type="checkbox" />
+            <div class="modal-fade-screen">
+              <div class="modal-inner">
+                <div class="modal-close" for="modal-2"></div>
+                <h1>Modal Title</h1>
+                <div class="hero">
+                  <div class="hero-inner">
+                    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
+                    " alt="Logo Image"></a>
+                    <div class="hero-copy">
+                      <h1>Short description of Product</h1>
+                      <p>A few reasons why this product is worth using, who it's for and why they need it.</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+                <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal">
+            <label for="modal-3">
+              <!-- <div class="modal-trigger">Click for Modal</div> -->
+              <div href="javascript:void(0)" class="grid-item modal-trigger">
+                <img src="images/athways.png" alt="">
+                <h1>Athways</h1>
+                <p>Team workout management software</p>
+              </div>
+            </label>
+            <input class="modal-state" id="modal-3" type="checkbox" />
+            <div class="modal-fade-screen">
+              <div class="modal-inner">
+                <div class="modal-close" for="modal-3"></div>
+                <h1>Modal Title</h1>
+                <div class="hero">
+                  <div class="hero-inner">
+                    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
+                    " alt="Logo Image"></a>
+                    <div class="hero-copy">
+                      <h1>Short description of Product</h1>
+                      <p>A few reasons why this product is worth using, who it's for and why they need it.</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+                <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal">
+            <label for="modal-4">
+              <!-- <div class="modal-trigger">Click for Modal</div> -->
+              <div href="javascript:void(0)" class="grid-item modal-trigger">
+                <img src="images/blog.png" alt="">
+                <h1>Simple Blog</h1>
+                <p>Simple Blog implementation</p>
+              </div>
+            </label>
+            <input class="modal-state" id="modal-4" type="checkbox" />
+            <div class="modal-fade-screen">
+              <div class="modal-inner">
+                <div class="modal-close" for="modal-4"></div>
+                <h1>Modal Title</h1>
+                <div class="hero">
+                  <div class="hero-inner">
+                    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
+                    " alt="Logo Image"></a>
+                    <div class="hero-copy">
+                      <h1>Short description of Product</h1>
+                      <p>A few reasons why this product is worth using, who it's for and why they need it.</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+                <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal">
+            <label for="modal-5">
+              <!-- <div class="modal-trigger">Click for Modal</div> -->
+              <div href="javascript:void(0)" class="grid-item modal-trigger">
+                <img src="images/custom-google.png" alt="">
+                <h1>Custom Google</h1>
+                <p>Team created web-based search engine</p>
+              </div>
+            </label>
+            <input class="modal-state" id="modal-5" type="checkbox" />
+            <div class="modal-fade-screen">
+              <div class="modal-inner">
+                <div class="modal-close" for="modal-5"></div>
+                <h1>Modal Title</h1>
+                <div class="hero">
+                  <div class="hero-inner">
+                    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
+                    " alt="Logo Image"></a>
+                    <div class="hero-copy">
+                      <h1>Short description of Product</h1>
+                      <p>A few reasons why this product is worth using, who it's for and why they need it.</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+                <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+              </div>
+            </div>
+          </div>
           <div class="right-cover"></div>
           <div class="bottom-cover"></div>
         </div>
