@@ -954,6 +954,8 @@ header {
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
+  .content-wrapper .under-construct {
+    text-align: center; }
   .content-wrapper:last-child {
     margin-right: 0; }
   .content-wrapper #about-me {
