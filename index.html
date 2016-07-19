@@ -3,272 +3,106 @@
   <head>
     <title>Kyle Wilcox</title>
     <link rel="stylesheet" type="text/css" href="css/style2.css">
-  </head>
-  <body>
-    <div class="foreground">
-      <!-- Navigation Bar -->
-      <header class="navigation" role="banner">
-        <div class="navigation-wrapper">
-          <a href="#" class="logo">
-            <h1 id="name-logo">Kyle Wilcox</h1>
-          </a>
-          <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">Menu</a>
-          <nav role="navigation">
-            <ul id="js-navigation-menu" class="navigation-menu show">
-              <li class="nav-link"><a href="#about-me">About Me</a></li>
-              <li class="nav-link"><a href="#projects">Projects</a></li>
-              <li class="nav-link"><a href="resume_s16.pdf">Resume</a></li>
-              <li class="nav-link"><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <!-- Carousel Of Art -->
-      <!--       <div id="carousel-art">
-        <div><img src="images/explore.jpg"></div>
-        <div><img src="images/football.jpg"></div>
-        <div><img src="images/exhibit1.png"></div>
-      </div> -->
-      <div id="js-parallax-window" class="parallax-window">
-        <div class="parallax-static-content">
-          <h1>Explore</h1>
-        </div>
-        <div id="js-parallax-background" class="parallax-background"></div>
-      </div>
-      <!-- About Me Section  -->
-      <div class="content-wrapper">
-        <div id="side-drawing"><img src="images/pdDrawing.jpg"></div>
-        <div id="about-me">
-          <h1 id="about">About Me:</h1>
-          <p>Hi my name is Kyle Wilcox, I am currently a fifth year senior at the University of Pennslyvania studying computer science and Chinese. During my first four years of undergrad I was a member of the Varsity football team. In the upcoming year I will be joining Venture for America, a fellowship where you get the oppurtunity to work at start up for 2 years. I am a very driven individual who is always trying to improve himself. If you'd like to chat feel free to contact me!</p>
-        </div>
-      </div>
-      <!-- project section -->
-      <!-- modal for projects -->
-      <div class="content-wrapper" id="projects">
-        <div class="grid-items-lines">
-          <!-- PINYINATOR -->
-          <div class="modal">
-            <label for="modal-1">
-              <!-- <div class="modal-trigger">Click for Modal</div> -->
-              <div href="javascript:void(0)" class="grid-item modal-trigger">
-                <img src="images/pinyin.png" alt="">
-                <h1>Piyinator</h1>
-                <p>Chrome Extension that annotates the pinyin onto Chinese Articles</p>
-              </div>
-            </label>
-            <input class="modal-state" id="modal-1" type="checkbox" />
-            <div class="modal-fade-screen">
-              <div class="modal-inner">
-                <div class="modal-close" for="modal-1"></div>
-                <h1>Piyinator</h1>
-                <div class="modal-intro"></div>
-                <div class="modal-content">
-                  <h1>Idea:</h1>
-                  <p>Learning Chinese is hard, and for an introductory learner reading a full article is close to impossible. The number of known characters required to even pronounce every line is very high. Coming,
-                    from a language with a roman alphabet, my prefered way to read Chinese, as well as
-                    many of my peers is through piyin(Chinese romanization). The problem is that articles do not include
-                    this and I often annotate the piyin above the characters. This is a painstaking process just to read one article and is not worth it to many people, especially beginners. Thus, the idea of Piyinator
-                    was born. Make a tool that would allow users to to have an artcile in Chinese have its piyin annotated
-                  automatically for you.</p>
-                  <h1>Challenges:</h1>
-                  <p>
-                    Scraping text from different Chinese artciles,
-                    First time creating a Chrome extension,
-                    How to properly convert characters to piyin,
-                    Formatting document with correct annotation above each word
-                  </p>
-                  <h1>What I learned</h1>
-                  <ul>
-                    <li>Creating Web API</li>
-                    <li>How to find patterns when inspecting sites' html</li>
-                    <li>Chrome base extension</li>
-                    <li>Maintaining correct lnaguage encoding from server to browser, and vise-versa</li>
-                  </ul>
-                  <h1>Tools:</h1>
-                  <ul>
-                    <li>Python</li>
-                    <li>Flask</li>
-                    <li>Jquery</li>
-                    <li>Javascript</li>
-                    <li>Heroku</li>
-                  </ul>
-                  <h1>Links:</h1>
-                  <a href="https://github.com/dericko/pinyinator_back.git">Git Repo</a>
-                </div>
-              </div>
-            </div>
+    <link rel="icon"
+      type="image/png"
+      href="images/favicon.ico">
+    </head>
+    <body>
+      <div class="foreground">
+        <!-- Navigation Bar -->
+        <header class="navigation" role="banner">
+          <div class="navigation-wrapper">
+            <a href="#" class="logo">
+              <h1 id="name-logo">Kyle Wilcox</h1>
+            </a>
+            <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">Menu</a>
+            <nav role="navigation">
+              <ul id="js-navigation-menu" class="navigation-menu show">
+                <li class="nav-link"><a href="#about-me">About Me</a></li>
+                <li class="nav-link"><a href="#projects">Projects</a></li>
+                <li class="nav-link"><a href="resume_s16.pdf">Resume</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
           </div>
-          <!-- deviant art section -->
-          <a href="http://wilcoxky.deviantart.com/gallery/?catpath=scraps" class="grid-item">
-            <img src="images/art.png" alt="">
-            <h1>My Sketchbook</h1>
-            <p>Collection of the sketches and illustrations I've done.</p>
-          </a>
-          <!-- senior design section -->
-          <div class="modal">
-            <label for="modal-2">
-              <!-- <div class="modal-trigger">Click for Modal</div> -->
-              <div href="javascript:void(0)" class="grid-item modal-trigger">
-                <img src="images/squat.png" alt="">
-                <h1>Lifting Analysis</h1>
-                <p>Analyze your squat form</p>
-              </div>
-            </label>
-            <input class="modal-state" id="modal-2" type="checkbox" />
-            <div class="modal-fade-screen">
-              <div class="modal-inner">
-                <div class="modal-close" for="modal-2"></div>
-                <h1>Squat Analysis</h1>
-                <div id="dynamocha-hero">
-                  <img src="images/squat-banner.png">
-                </div>
-                <div class="modal-intro"></div>
-                <div class="modal-content">
-                  <h1>Idea:</h1>
-                  <p>For my senior design at the University of Pennslyvania I wanted to do something related to something
-                    that I enjoy but currently has a few issues in the world. Along with this, I have always been interested
-                    in compture vision but never had taken a class on it before. The technology is rapidly expanding and
-                    I wanted to see for myself how powerful it is. These all came together in my senior design that
-                  analyzes a video of someone squatting and outputs to them faults in their form.</p>
-                  <h1>Challenges:</h1>
-                  <p>
-                    Learning matlab computer vision toolbox,
-                    Modeling the human skeletal structure,
-                    Collecting data of users movement,
-                    Creating different models for various mistakes in form
-                  </p>
-                  <h1>What I learned</h1>
-                  <p>Computer vision basics, modeling real life situations, matlab computer vision toolbox,
-                  Process of interating to improve design</p>
-                  <h1>Tools:</h1>
-                  <p>Matlab, Iphone video camera</p>
-                  <h1>Links:</h1>
-                  <a href="squat.pdf">Link to Paper</a>
-                </div>
-              </div>
-            </div>
+        </header>
+        <div id="js-parallax-window" class="parallax-window">
+          <div class="parallax-static-content">
+            <h1>Explore</h1>
           </div>
-          <!-- athways section -->
-          <div class="modal">
-            <label for="modal-3">
-              <!-- <div class="modal-trigger">Click for Modal</div> -->
-              <div href="javascript:void(0)" class="grid-item modal-trigger">
-                <img src="images/athways.png" alt="">
-                <h1>Athways</h1>
-                <p>Team workout management software</p>
-              </div>
-            </label>
-            <input class="modal-state" id="modal-3" type="checkbox" />
-            <div class="modal-fade-screen">
-              <div class="modal-inner">
-                <div class="modal-close" for="modal-3"></div>
-                <h1>Athways/Athletics</h1>
-                <div id="dynamocha-hero">
-                  <img src="images/athways-banner.png">
-                </div>
-                <div class="modal-intro"></div>
-                <div class="modal-content">
-                  <h1>Idea:</h1>
-                  <p>Being a Varsity athlete at Penn, I realized that the way work outs were distributed to athletes
-                    at all colleges during the summer was something that needed to be changed. Often times, athletes
-                    were simple given a packet and expected to do it with little input from the coach. This led me and
-                  my rommate, Dan Reardon, to come up with the idea of Athways, a workout distribution platform for athletes by athletes who know how the whole process works.</p>
-                  <h1>Challenges:</h1>
-                  <p>Starting a company, first large project taken on, What is the proper way to design a scaleable
-                  system</p>
-                  <h1>What I learned</h1>
-                  <p>Ruby on Rails, Platform design, SQL vs NoSQL, Marketing/Pitching</p>
-                  <h1>Tools:</h1>
-                  <p>Ruby on Rails and various Gems, Illustrator, photoshop, Excel, Heroku</p>
-                  <h1>Links:</h1>
-                  <a href="https://github.com/wilcoxky/WorkoutApp">Git Repo</a>
-                </div>
-              </div>
-            </div>
+          <div id="js-parallax-background" class="parallax-background"></div>
+        </div>
+        <!-- About Me Section  -->
+        <div class="content-wrapper">
+          <div id="side-drawing"><img src="images/pdDrawing.jpg"></div>
+          <div id="about-me">
+            <h1 id="about">About Me:</h1>
+            <p>Hi my name is Kyle Wilcox, I am currently a fifth year senior at the University of Pennslyvania studying computer science and Chinese. During my first four years of undergrad I was a member of the Varsity football team. In the upcoming year I will be joining Venture for America, a fellowship where you get the oppurtunity to work at start up for 2 years. I am a very driven individual who is always trying to improve himself. If you'd like to chat feel free to contact me!</p>
           </div>
-          <!-- flask blog app -->
-          <div class="modal">
-            <label for="modal-4">
-              <!-- <div class="modal-trigger">Click for Modal</div> -->
-              <div href="javascript:void(0)" class="grid-item modal-trigger">
-                <img src="images/blog.png" alt="">
-                <h1>Blog</h1>
-                <p>Simple Blog implementation</p>
-              </div>
-            </label>
-            <input class="modal-state" id="modal-4" type="checkbox" />
-            <div class="modal-fade-screen">
-              <div class="modal-inner">
-                <div class="modal-close" for="modal-4"></div>
-                <h1>Blog - Minimal Dose</h1>
-                <div id="dynamocha-hero">
-                  <img src="images/blog-banner.png">
-                  <img src="images/blog-sample.png">
-                </div>
-                <div class="modal-intro"></div>
-                <div class="modal-content">
-                  <h1>Idea:</h1>
-                  <p>In order to gain a better understanding for programming webapps, I thought a good place to start
-                    would be by creating a simple web blog/crm. I took this project on because I wanted to continue to push
-                  myself to learn.</p>
-                  <h1>Challenges:</h1>
-                  <p>At the beginning I was unsure of how mark down was displayed to the broswer,
-                    How to save MarkDown into the database,
-                  Creating an interface for user to manage custom content</p>
-                  <h1>What I learned</h1>
-                  <p>Flask, NoSQL implementation, Markdown, UI/UX</p>
-                  <h1>Tools:</h1>
-                  <p>Flask, Python, Sketch, MongoDB, Heroku</p>
-                  <h1>Links:</h1>
-                  <a href="https://github.com/wilcoxky/justinBlog.git">Git Repo</a>
-                </div>
-              </div>
-            </div>
-            <!-- dynamocha info -->
+        </div>
+        <!-- project section -->
+        <!-- modal for projects -->
+        <div class="content-wrapper" id="projects">
+          <div class="grid-items-lines">
+            <!-- PINYINATOR -->
             <div class="modal">
-              <label for="modal-5">
+              <label for="modal-1">
                 <!-- <div class="modal-trigger">Click for Modal</div> -->
                 <div href="javascript:void(0)" class="grid-item modal-trigger">
-                  <img src="images/custom-google.png" alt="">
-                  <h1>Custom Google (Dynamocha)</h1>
-                  <p>Team created web-based search engine</p>
+                  <img src="images/pinyin.png" alt="">
+                  <h1>Piyinator</h1>
+                  <p>Chrome Extension that annotates the pinyin onto Chinese Articles</p>
                 </div>
               </label>
-              <input class="modal-state" id="modal-5" type="checkbox" />
+              <input class="modal-state" id="modal-1" type="checkbox" />
               <div class="modal-fade-screen">
                 <div class="modal-inner">
-                  <div class="modal-close" for="modal-5"></div>
-                  <h1>Dynamocha</h1>
-                  <div id="dynamocha-hero">
-                    <img src="images/dynamocha-banner.png">
-                  </div>
+                  <div class="modal-close" for="modal-1"></div>
+                  <h1>Piyinator</h1>
                   <div class="modal-intro"></div>
                   <div class="modal-content">
                     <h1>Idea:</h1>
-                    <p>The Goal of this project was to make a custom copy of Google. Starting from crawling the internet
-                      to get content and then creating your own implementation of pageRank and other features that could
-                    be used by a search interface to output search results.</p>
+                    <p>Learning Chinese is hard, and for an introductory learner reading a full article is close to impossible. The number of known characters required to even pronounce every line is very high. Coming,
+                      from a language with a roman alphabet, my prefered way to read Chinese, as well as
+                      many of my peers is through piyin(Chinese romanization). The problem is that articles do not include
+                      this and I often annotate the piyin above the characters. This is a painstaking process just to read one article and is not worth it to many people, especially beginners. Thus, the idea of Piyinator
+                      was born. Make a tool that would allow users to to have an artcile in Chinese have its piyin annotated
+                    automatically for you.</p>
                     <h1>Challenges:</h1>
-                    <p>I was in charge of creating the web-crawler for the group, and was able to create a crawler
-                    that could download and scan at a rate of 300k pages a day, by running on 9 EC2 instances at once</p>
+                    <p>
+                      Scraping text from different Chinese artciles,
+                      First time creating a Chrome extension,
+                      How to properly convert characters to piyin,
+                      Formatting document with correct annotation above each word
+                    </p>
                     <h1>What I learned</h1>
-                    <p>While many tools exist today to
-                      crawl the web, we were doing this from scratch in Java. The implementation had to handle all problems
-                      that arise when scraping the web, such as traps and malformed html. The data was then sent to an AWS S3
-                    and stored. </p>
+                    <ul>
+                      <li>Creating Web API</li>
+                      <li>How to find patterns when inspecting sites' html</li>
+                      <li>Chrome base extension</li>
+                      <li>Maintaining correct lnaguage encoding from server to browser, and vise-versa</li>
+                    </ul>
                     <h1>Tools:</h1>
-                    <p>Java, AWS</p>
+                    <ul>
+                      <li>Python</li>
+                      <li>Flask</li>
+                      <li>Jquery</li>
+                      <li>Javascript</li>
+                      <li>Heroku</li>
+                    </ul>
                     <h1>Links:</h1>
-                    <a href="https://gitlab.com/wilcoxky/dynamocha.git">Git Repo</a>
-                    <br>
-                    <a href="dynamocha.pdf">Paper</a>
+                    <a href="https://github.com/dericko/pinyinator_back.git">Git Repo</a>
                   </div>
                 </div>
               </div>
             </div>
-            
-            <!-- vfa challenge #1 -->
+            <!-- deviant art section -->
+            <a href="http://wilcoxky.deviantart.com/gallery/?catpath=scraps" class="grid-item">
+              <img src="images/art.png" alt="">
+              <h1>My Sketchbook</h1>
+              <p>Collection of the sketches and illustrations I've done.</p>
+            </a>
+            <!-- senior design section -->
             <div class="modal">
               <label for="modal-2">
                 <!-- <div class="modal-trigger">Click for Modal</div> -->
@@ -312,118 +146,281 @@
                 </div>
               </div>
             </div>
-            <!-- vfa challenge #2 -->
+            <!-- athways section -->
             <div class="modal">
-              <label for="modal-2">
+              <label for="modal-3">
                 <!-- <div class="modal-trigger">Click for Modal</div> -->
                 <div href="javascript:void(0)" class="grid-item modal-trigger">
-                  <img src="images/squat.png" alt="">
-                  <h1>Lifting Analysis</h1>
-                  <p>Analyze your squat form</p>
+                  <img src="images/athways.png" alt="">
+                  <h1>Athways</h1>
+                  <p>Team workout management software</p>
                 </div>
               </label>
-              <input class="modal-state" id="modal-2" type="checkbox" />
+              <input class="modal-state" id="modal-3" type="checkbox" />
               <div class="modal-fade-screen">
                 <div class="modal-inner">
-                  <div class="modal-close" for="modal-2"></div>
-                  <h1>Squat Analysis</h1>
+                  <div class="modal-close" for="modal-3"></div>
+                  <h1>Athways/Athletics</h1>
                   <div id="dynamocha-hero">
-                    <img src="images/squat-banner.png">
+                    <img src="images/athways-banner.png">
                   </div>
                   <div class="modal-intro"></div>
                   <div class="modal-content">
                     <h1>Idea:</h1>
-                    <p>For my senior design at the University of Pennslyvania I wanted to do something related to something
-                      that I enjoy but currently has a few issues in the world. Along with this, I have always been interested
-                      in compture vision but never had taken a class on it before. The technology is rapidly expanding and
-                      I wanted to see for myself how powerful it is. These all came together in my senior design that
-                    analyzes a video of someone squatting and outputs to them faults in their form.</p>
+                    <p>Being a Varsity athlete at Penn, I realized that the way work outs were distributed to athletes
+                      at all colleges during the summer was something that needed to be changed. Often times, athletes
+                      were simple given a packet and expected to do it with little input from the coach. This led me and
+                    my rommate, Dan Reardon, to come up with the idea of Athways, a workout distribution platform for athletes by athletes who know how the whole process works.</p>
                     <h1>Challenges:</h1>
-                    <p>
-                      Learning matlab computer vision toolbox,
-                      Modeling the human skeletal structure,
-                      Collecting data of users movement,
-                      Creating different models for various mistakes in form
-                    </p>
+                    <p>Starting a company, first large project taken on, What is the proper way to design a scaleable
+                    system</p>
                     <h1>What I learned</h1>
-                    <p>Computer vision basics, modeling real life situations, matlab computer vision toolbox,
-                    Process of interating to improve design</p>
+                    <p>Ruby on Rails, Platform design, SQL vs NoSQL, Marketing/Pitching</p>
                     <h1>Tools:</h1>
-                    <p>Matlab, Iphone video camera</p>
+                    <p>Ruby on Rails and various Gems, Illustrator, photoshop, Excel, Heroku</p>
                     <h1>Links:</h1>
-                    <a href="squat.pdf">Link to Paper</a>
+                    <a href="https://github.com/wilcoxky/WorkoutApp">Git Repo</a>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- vfa challenge #4 -->
+            <!-- flask blog app -->
             <div class="modal">
-              <label for="modal-2">
+              <label for="modal-4">
                 <!-- <div class="modal-trigger">Click for Modal</div> -->
                 <div href="javascript:void(0)" class="grid-item modal-trigger">
-                  <img src="images/squat.png" alt="">
-                  <h1></h1>
-                  <p>Analyze your squat form</p>
+                  <img src="images/blog.png" alt="">
+                  <h1>Blog</h1>
+                  <p>Simple Blog implementation</p>
                 </div>
               </label>
-              <input class="modal-state" id="modal-2" type="checkbox" />
+              <input class="modal-state" id="modal-4" type="checkbox" />
               <div class="modal-fade-screen">
                 <div class="modal-inner">
-                  <div class="modal-close" for="modal-2"></div>
-                  <h1>Squat Analysis</h1>
+                  <div class="modal-close" for="modal-4"></div>
+                  <h1>Blog - Minimal Dose</h1>
                   <div id="dynamocha-hero">
-                    <img src="images/squat-banner.png">
+                    <img src="images/blog-banner.png">
+                    <img src="images/blog-sample.png">
                   </div>
                   <div class="modal-intro"></div>
                   <div class="modal-content">
                     <h1>Idea:</h1>
-                    <p>For my senior design at the University of Pennslyvania I wanted to do something related to something
-                      that I enjoy but currently has a few issues in the world. Along with this, I have always been interested
-                      in compture vision but never had taken a class on it before. The technology is rapidly expanding and
-                      I wanted to see for myself how powerful it is. These all came together in my senior design that
-                    analyzes a video of someone squatting and outputs to them faults in their form.</p>
+                    <p>In order to gain a better understanding for programming webapps, I thought a good place to start
+                      would be by creating a simple web blog/crm. I took this project on because I wanted to continue to push
+                    myself to learn.</p>
                     <h1>Challenges:</h1>
-                    <p>
-                      Learning matlab computer vision toolbox,
-                      Modeling the human skeletal structure,
-                      Collecting data of users movement,
-                      Creating different models for various mistakes in form
-                    </p>
+                    <p>At the beginning I was unsure of how mark down was displayed to the broswer,
+                      How to save MarkDown into the database,
+                    Creating an interface for user to manage custom content</p>
                     <h1>What I learned</h1>
-                    <p>Computer vision basics, modeling real life situations, matlab computer vision toolbox,
-                    Process of interating to improve design</p>
+                    <p>Flask, NoSQL implementation, Markdown, UI/UX</p>
                     <h1>Tools:</h1>
-                    <p>Matlab, Iphone video camera</p>
+                    <p>Flask, Python, Sketch, MongoDB, Heroku</p>
                     <h1>Links:</h1>
-                    <a href="squat.pdf">Link to Paper</a>
+                    <a href="https://github.com/wilcoxky/justinBlog.git">Git Repo</a>
                   </div>
                 </div>
               </div>
+              <!-- dynamocha info -->
+              <div class="modal">
+                <label for="modal-5">
+                  <!-- <div class="modal-trigger">Click for Modal</div> -->
+                  <div href="javascript:void(0)" class="grid-item modal-trigger">
+                    <img src="images/custom-google.png" alt="">
+                    <h1>Custom Google (Dynamocha)</h1>
+                    <p>Team created web-based search engine</p>
+                  </div>
+                </label>
+                <input class="modal-state" id="modal-5" type="checkbox" />
+                <div class="modal-fade-screen">
+                  <div class="modal-inner">
+                    <div class="modal-close" for="modal-5"></div>
+                    <h1>Dynamocha</h1>
+                    <div id="dynamocha-hero">
+                      <img src="images/dynamocha-banner.png">
+                    </div>
+                    <div class="modal-intro"></div>
+                    <div class="modal-content">
+                      <h1>Idea:</h1>
+                      <p>The Goal of this project was to make a custom copy of Google. Starting from crawling the internet
+                        to get content and then creating your own implementation of pageRank and other features that could
+                      be used by a search interface to output search results.</p>
+                      <h1>Challenges:</h1>
+                      <p>I was in charge of creating the web-crawler for the group, and was able to create a crawler
+                      that could download and scan at a rate of 300k pages a day, by running on 9 EC2 instances at once</p>
+                      <h1>What I learned</h1>
+                      <p>While many tools exist today to
+                        crawl the web, we were doing this from scratch in Java. The implementation had to handle all problems
+                        that arise when scraping the web, such as traps and malformed html. The data was then sent to an AWS S3
+                      and stored. </p>
+                      <h1>Tools:</h1>
+                      <p>Java, AWS</p>
+                      <h1>Links:</h1>
+                      <a href="https://gitlab.com/wilcoxky/dynamocha.git">Git Repo</a>
+                      <br>
+                      <a href="dynamocha.pdf">Paper</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- vfa challenge #1 -->
+              <div class="modal">
+                <label for="modal-2">
+                  <!-- <div class="modal-trigger">Click for Modal</div> -->
+                  <div href="javascript:void(0)" class="grid-item modal-trigger">
+                    <img src="images/squat.png" alt="">
+                    <h1>Lifting Analysis</h1>
+                    <p>Analyze your squat form</p>
+                  </div>
+                </label>
+                <input class="modal-state" id="modal-2" type="checkbox" />
+                <div class="modal-fade-screen">
+                  <div class="modal-inner">
+                    <div class="modal-close" for="modal-2"></div>
+                    <h1>Squat Analysis</h1>
+                    <div id="dynamocha-hero">
+                      <img src="images/squat-banner.png">
+                    </div>
+                    <div class="modal-intro"></div>
+                    <div class="modal-content">
+                      <h1>Idea:</h1>
+                      <p>For my senior design at the University of Pennslyvania I wanted to do something related to something
+                        that I enjoy but currently has a few issues in the world. Along with this, I have always been interested
+                        in compture vision but never had taken a class on it before. The technology is rapidly expanding and
+                        I wanted to see for myself how powerful it is. These all came together in my senior design that
+                      analyzes a video of someone squatting and outputs to them faults in their form.</p>
+                      <h1>Challenges:</h1>
+                      <p>
+                        Learning matlab computer vision toolbox,
+                        Modeling the human skeletal structure,
+                        Collecting data of users movement,
+                        Creating different models for various mistakes in form
+                      </p>
+                      <h1>What I learned</h1>
+                      <p>Computer vision basics, modeling real life situations, matlab computer vision toolbox,
+                      Process of interating to improve design</p>
+                      <h1>Tools:</h1>
+                      <p>Matlab, Iphone video camera</p>
+                      <h1>Links:</h1>
+                      <a href="squat.pdf">Link to Paper</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- vfa challenge #2 -->
+              <div class="modal">
+                <label for="modal-2">
+                  <!-- <div class="modal-trigger">Click for Modal</div> -->
+                  <div href="javascript:void(0)" class="grid-item modal-trigger">
+                    <img src="images/squat.png" alt="">
+                    <h1>Lifting Analysis</h1>
+                    <p>Analyze your squat form</p>
+                  </div>
+                </label>
+                <input class="modal-state" id="modal-2" type="checkbox" />
+                <div class="modal-fade-screen">
+                  <div class="modal-inner">
+                    <div class="modal-close" for="modal-2"></div>
+                    <h1>Squat Analysis</h1>
+                    <div id="dynamocha-hero">
+                      <img src="images/squat-banner.png">
+                    </div>
+                    <div class="modal-intro"></div>
+                    <div class="modal-content">
+                      <h1>Idea:</h1>
+                      <p>For my senior design at the University of Pennslyvania I wanted to do something related to something
+                        that I enjoy but currently has a few issues in the world. Along with this, I have always been interested
+                        in compture vision but never had taken a class on it before. The technology is rapidly expanding and
+                        I wanted to see for myself how powerful it is. These all came together in my senior design that
+                      analyzes a video of someone squatting and outputs to them faults in their form.</p>
+                      <h1>Challenges:</h1>
+                      <p>
+                        Learning matlab computer vision toolbox,
+                        Modeling the human skeletal structure,
+                        Collecting data of users movement,
+                        Creating different models for various mistakes in form
+                      </p>
+                      <h1>What I learned</h1>
+                      <p>Computer vision basics, modeling real life situations, matlab computer vision toolbox,
+                      Process of interating to improve design</p>
+                      <h1>Tools:</h1>
+                      <p>Matlab, Iphone video camera</p>
+                      <h1>Links:</h1>
+                      <a href="squat.pdf">Link to Paper</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- vfa challenge #4 -->
+              <div class="modal">
+                <label for="modal-2">
+                  <!-- <div class="modal-trigger">Click for Modal</div> -->
+                  <div href="javascript:void(0)" class="grid-item modal-trigger">
+                    <img src="images/squat.png" alt="">
+                    <h1></h1>
+                    <p>Analyze your squat form</p>
+                  </div>
+                </label>
+                <input class="modal-state" id="modal-2" type="checkbox" />
+                <div class="modal-fade-screen">
+                  <div class="modal-inner">
+                    <div class="modal-close" for="modal-2"></div>
+                    <h1>Squat Analysis</h1>
+                    <div id="dynamocha-hero">
+                      <img src="images/squat-banner.png">
+                    </div>
+                    <div class="modal-intro"></div>
+                    <div class="modal-content">
+                      <h1>Idea:</h1>
+                      <p>For my senior design at the University of Pennslyvania I wanted to do something related to something
+                        that I enjoy but currently has a few issues in the world. Along with this, I have always been interested
+                        in compture vision but never had taken a class on it before. The technology is rapidly expanding and
+                        I wanted to see for myself how powerful it is. These all came together in my senior design that
+                      analyzes a video of someone squatting and outputs to them faults in their form.</p>
+                      <h1>Challenges:</h1>
+                      <p>
+                        Learning matlab computer vision toolbox,
+                        Modeling the human skeletal structure,
+                        Collecting data of users movement,
+                        Creating different models for various mistakes in form
+                      </p>
+                      <h1>What I learned</h1>
+                      <p>Computer vision basics, modeling real life situations, matlab computer vision toolbox,
+                      Process of interating to improve design</p>
+                      <h1>Tools:</h1>
+                      <p>Matlab, Iphone video camera</p>
+                      <h1>Links:</h1>
+                      <a href="squat.pdf">Link to Paper</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-cover"></div>
+              <div class="bottom-cover"></div>
             </div>
-            <div class="right-cover"></div>
-            <div class="bottom-cover"></div>
+          </div>
+          
+          <!-- contact section -->
+          <div class="content-wrapper" id="contact">
+            <div id="contact-info">
+              <a href="mailto:wilcox32ahs@gmail.com"><img src="images/lego-email.png"></a>
+              <a href="http://github.com/wilcoxky"><img src="images/lego-github.png"></a>
+              <a href="http://linkedin.com/in/kylewilcox41"><img src="images/linkedin.png"></a>
+              <div>Created By: Kyle Wilcox</div>
+            </div>
           </div>
         </div>
-        
-        <!-- contact section -->
-        <div class="content-wrapper" id="contact">
-          <div id="contact-info">
-            <a href="mailto:wilcox32ahs@gmail.com"><img src="images/lego-email.png"></a>
-            <a href="http://github.com/wilcoxky"><img src="images/lego-github.png"></a>
-            <a href="http://linkedin.com/in/kylewilcox41"><img src="images/linkedin.png"></a>
-            <div>Created By: Kyle Wilcox</div>
-          </div>
-        </div>
-      </div>
-      <script src="js/bundle.js"></script>
-      <!-- Google Analytics -->
-      <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-76490303-1', 'auto');
-      ga('send', 'pageview');
-      </script>
-    </body>
-  </html>
+        <script src="js/bundle.js"></script>
+        <!-- Google Analytics -->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-76490303-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+      </body>
+    </html>
