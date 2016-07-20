@@ -682,9 +682,11 @@ hr {
   font-size: 4em; }
 
 .parallax-background {
-  background: url("../images/bg1.jpg") repeat;
-  background-position: top;
-  background-color: beige;
+  background: url("../images/Kyle_Wilcox.jpg");
+  background-position-x: center;
+  background-size: 60em;
+  background-repeat: no-repeat;
+  background-color: #FFF;
   height: 60em;
   left: 0;
   position: absolute;
@@ -909,7 +911,7 @@ hr {
   overflow: hidden; }
 
 body {
-  background-color: #8494A2; }
+  background-color: #33495F; }
 
 .foreground {
   max-width: 1200px;
