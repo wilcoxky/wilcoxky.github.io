@@ -7,7 +7,7 @@ var rename = require('gulp-rename');
 	Compile SCSS -> CSS,
 	and Min
   Comment for my own opush
-  saved password?
+  saved 
  */
 gulp.task('minify', function () {
   return gulp.src('./css/**/*.css')
