@@ -5,17 +5,26 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mini": "gulp minify"
+    "mini": "gulp minify",
+    "build": "webpack --config webpack.config.js",
+    "pretty": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\""
   },
-  "author": "",
+  "author": "Kyle Wilcox <wilcox32ahs@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.12",
-    "gulp-rename": "^1.2.2"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "eslint": "^4.5.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "prettier": "^1.5.3",
+    "webpack": "^3.5.5"
   },
   "dependencies": {
-    "jquery": "^2.2.3",
-    "normalize.css": "^3.0.3"
-  }
+    "preact": "^8.2.1",
+    "preact-compat": "^3.17.0",
+    "styled-components": "^2.1.2"
+  },
+  "repository": "https://github.com/wilcoxky/wilcoxky.github.io.git"
 }
