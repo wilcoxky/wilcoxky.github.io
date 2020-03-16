@@ -1,0 +1,44 @@
+body {
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  color: #e47676;
+}
+a::before {
+  color: #e47676;
+}
+
+a::after {
+  color: #76d1e4;
+}
+
+#headshot {
+  width: auto;
+  height: 300px;
+  border-radius: 2rem;
+  margin: 50px;
+}
+
+section {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  align-items: center;
+}
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.greeting {
+  margin-bottom: 0;
+  font-size: 45px;
+  font-weight: 600;
+  color: #e47676;
+}
