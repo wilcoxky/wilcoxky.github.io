@@ -15,7 +15,7 @@
     "gulp-rename": "^1.2.2"
   },
   "dependencies": {
-    "jquery": "^2.2.3",
+    "jquery": "^3.4.1",
     "normalize.css": "^3.0.3"
   }
 }
